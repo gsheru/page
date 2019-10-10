@@ -643,7 +643,7 @@
     list-style: none;
   }
 
-  body ul li::before {
+  body ul li::after {
     content: '';
     background: #f60;
     width: 0.4em;
@@ -654,15 +654,15 @@
     top: .6em;
   }
 
-  body ul li li::before {
+  body ul li li::after {
     background: #999;
   }
 
-  body ul li li li::before {
+  body ul li li li::after {
     background: #ccc;
   }
 
-  body ul li li li li::before {
+  body ul li li li li::after {
     background: transparent;
     border: 2px solid #444;
   }
@@ -995,5 +995,21 @@
   }
 
   body a[href] {
-    color: #ff6100;
+    color: #000;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+
+  body a[href]:focus {
+    outline: none;
+  }
+
+  body a[href]:hover,
+  body a[href]:focus {
+    color: #f60;
+  }
+
+  body a[href]:active,
+  body a[href]:active:focus {
+    color: rgb(202, 81, 0);
   }
