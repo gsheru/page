@@ -1041,25 +1041,41 @@ body a[href]:active:focus {
 }
 
 .language-mermaid .mermaid .task.active,
-.language-mermaid .mermaid .task.active0 {
+.language-mermaid .mermaid .task.active0,
+.language-mermaid .mermaid .task.active1,
+.language-mermaid .mermaid .task.active2,
+.language-mermaid .mermaid .task.active3,
+.language-mermaid .mermaid .task.active4 {
   fill: #4BB4E6 !important;
   stroke: #4BB4E6 !important;
 }
 
 .language-mermaid .mermaid .task.crit,
-.language-mermaid .mermaid .task.crit0 {
+.language-mermaid .mermaid .task.crit0,
+.language-mermaid .mermaid .task.crit1,
+.language-mermaid .mermaid .task.crit2,
+.language-mermaid .mermaid .task.crit3,
+.language-mermaid .mermaid .task.crit4 {
   fill: #f60 !important;
   stroke: #f60 !important;
 }
 
 .language-mermaid .mermaid .task.activeCrit,
-.language-mermaid .mermaid .task.activeCrit0 {
+.language-mermaid .mermaid .task.activeCrit0,
+.language-mermaid .mermaid .task.activeCrit1,
+.language-mermaid .mermaid .task.activeCrit2,
+.language-mermaid .mermaid .task.activeCrit3,
+.language-mermaid .mermaid .task.activeCrit4 {
   fill: #f60 !important;
   stroke: #f60 !important;
 }
 
 .language-mermaid .mermaid .task.done,
-.language-mermaid .mermaid .task.done0 {
+.language-mermaid .mermaid .task.done0,
+.language-mermaid .mermaid .task.done1,
+.language-mermaid .mermaid .task.done2,
+.language-mermaid .mermaid .task.done3,
+.language-mermaid .mermaid .task.done4 {
   fill: #00000011 !important;
   stroke: #00000011 !important;
   fill: #32C832 !important;
@@ -1067,7 +1083,11 @@ body a[href]:active:focus {
 }
 
 .language-mermaid .mermaid .taskText,
-.language-mermaid .mermaid .taskText0 {
+.language-mermaid .mermaid .taskText0,
+.language-mermaid .mermaid .taskText1,
+.language-mermaid .mermaid .taskText2,
+.language-mermaid .mermaid .taskText3,
+.language-mermaid .mermaid .taskText4 {
   color: #fff !important;
   fill: #fff !important;
   font-weight: bold;
@@ -1075,13 +1095,21 @@ body a[href]:active:focus {
 }
 
 .language-mermaid .mermaid .critText,
-.language-mermaid .mermaid .critText0 {
+.language-mermaid .mermaid .critText0,
+.language-mermaid .mermaid .critText1,
+.language-mermaid .mermaid .critText2,
+.language-mermaid .mermaid .critText3,
+.language-mermaid .mermaid .critText4 {
   color: #fff !important;
   fill: #fff !important;
 }
 
 .language-mermaid .mermaid .doneText,
-.language-mermaid .mermaid .doneText0 {
+.language-mermaid .mermaid .doneText0,
+.language-mermaid .mermaid .doneText1,
+.language-mermaid .mermaid .doneText2,
+.language-mermaid .mermaid .doneText3,
+.language-mermaid .mermaid .doneText4 {
   color: #00000044 !important;
   fill: #00000044 !important;
 }
