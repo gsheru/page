@@ -1114,3 +1114,11 @@ body a[href]:active:focus {
 .language-mermaid .mermaid .section3 {
   fill: #e0e0e0 !important;
 }
+
+
+
+
+span.edgeLabel {
+  font-size: 11px;
+  padding: 9px;
+}
