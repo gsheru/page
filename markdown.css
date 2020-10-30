@@ -654,7 +654,8 @@ body ul li::after {
 	display: inline-block;
 	position: absolute;
 	left: -1em;
-	top: 0.6em;
+  top: 0;
+  transform: translate(0, .6em);
 }
 
 body ul li li::after {
@@ -666,8 +667,11 @@ body ul li li li::after {
 }
 
 body ul li li li li::after {
-	background: transparent;
-	border: 2px solid #444;
+	background: #aaa;
+	border-radius: 1rem;
+  border: none;
+  height: 5px;
+  width: 5px;
 }
 
 body dl dt {
@@ -1204,6 +1208,18 @@ body a[href]:active:focus {
 	display: none;
 }
 
+img.screenshot {
+	border: 1px solid #ccc;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+	width: 100%;
+	max-width: 80%;
+	display: block;
+	margin: 50px auto;
+}
+#page-ctn {
+	color: inherit !important;
+}
+
 /* ========================================================================= */
 /* Markdown Styles Dark Theme */
 /* ========================================================================= */
@@ -1226,8 +1242,8 @@ body a[href]:active:focus {
 
 	b,
 	strong,
-	a:link {
+	a:link,
+	a {
 		color: #fff;
 	}
 }
-
