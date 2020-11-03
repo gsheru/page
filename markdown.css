@@ -654,8 +654,8 @@ body ul li::after {
 	display: inline-block;
 	position: absolute;
 	left: -1em;
-  top: 0;
-  transform: translate(0, .6em);
+	top: 0;
+	transform: translate(0, 0.6em);
 }
 
 body ul li li::after {
@@ -669,9 +669,9 @@ body ul li li li::after {
 body ul li li li li::after {
 	background: #aaa;
 	border-radius: 1rem;
-  border: none;
-  height: 5px;
-  width: 5px;
+	border: none;
+	height: 5px;
+	width: 5px;
 }
 
 body dl dt {
@@ -1230,20 +1230,20 @@ img.screenshot {
 		color: #aaa;
 	}
 
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6 {
+	body h1,
+	body h2,
+	body h3,
+	body h4,
+	body h5,
+	body h6 {
 		color: #fff;
 		border-color: #444 !important;
 	}
 
-	b,
-	strong,
-	a:link,
-	a {
+	body b,
+	body strong,
+	body a:link,
+	body a[href] {
 		color: #fff;
 	}
 }
