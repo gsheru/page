@@ -1,0 +1,431 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+@font-face {
+	font-family: 'Segoe UI WPC';
+	src: local('sans-serif');
+}
+
+@font-face {
+	font-family: 'Segoe UI WPC Semilight';
+	src: local('sans-serif');
+	font-weight: 100;
+}
+
+@font-face {
+	font-family: 'Segoe UI WPC Semibold';
+	src: local('sans-serif');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'wf_segoe-ui_normal';
+	src: local('Tahoma');
+}
+
+@font-face {
+	font-family: 'wf_segoe-ui_semilight';
+	src: local('Tahoma');
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: 'wf_segoe-ui_semibold';
+	src: local('Tahoma');
+	font-weight: bold;
+}
+
+/* LOGIN PAGE */
+
+.mouse .logonDiv,
+.twide .logonDiv {
+	background: #fff;
+	padding: 30p;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* NOTIFICATIONS */
+
+/* .o365cs-notifications-notificationPopupArea {} */
+.o365cs-notifications-notificationPopup {
+	padding: 10px 15px;
+	padding-left: 5px;
+}
+
+/* Make unread left line accent bigger and blue */
+.ms-bgc-ts {
+	background: #449df2 !important;
+}
+/*
+._lvv_A { width: 7px !important; }
+._lvv_y ._lvv_A { width: 0px !important; }
+*/
+
+._lvv_y ._lvv_A {
+	height: 0 !important;
+	width: 0 !important;
+	border-radius: 50%;
+}
+._lvv_A,
+._lvv_F1 {
+	top: 0.7rem !important;
+	left: 0.7rem !important;
+	height: 12px !important;
+	width: 12px !important;
+	border-radius: 50%;
+}
+
+/* Make unread messages bold */
+.lvHighlightFromClass {
+	font-weight: bold;
+	/* xxletter-spacing: -1px; */
+}
+._lvv_y .lvHighlightFromClass {
+	font-weight: 500;
+}
+
+/* Line between messages */
+._lvv_w._lvv_x {
+	border-bottom: 1px solid #eee;
+	border-top: 1px solid #eee;
+	margin-bottom: -1px;
+}
+
+/* "From" text size */
+.ms-font-l {
+	font-size: 15px !important;
+}
+
+/* Message Separators (LA SEMANA PASADA) */
+._lvv_42:not(:empty) {
+	color: #888;
+	background: #f8f8f8;
+}
+
+body * {
+	-webkit-font-smoothing: subpixel-antialiased !important;
+	font-family: Helvetica Neue, Arial !important;
+}
+
+/* Flagged */
+body .showAsFlaggedMouse {
+	background: #fff;
+}
+
+body .showAsFlaggedMouse::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 3px;
+	background: red;
+}
+
+body .o365cs-flexPane-unseenCount {
+	background-color: rgb(227, 0, 0);
+}
+
+body [aria-label='Contenidos del mensaje'],
+body [aria-label='Message Contents'],
+body [autoid='_rp_3'] {
+	border: 1px solid #d6d6d6;
+	background-color: #fff;
+	padding: 0 20px;
+	margin-bottom: 10px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+body ._n_Y,
+body [aria-label='Panel de lectura'] {
+	background-color: #eeeeee;
+	margin-left: -3px;
+	padding-left: 10px;
+}
+
+body ._rp_k,
+body [aria-label='Reading pane'] {
+	margin-left: 10px;
+}
+
+/* Reading pane contents /
+body ._rp_j {
+    background: #fff;
+}
+
+/*
+body [aria-label="Conversación"]{
+    background-color: #eeeeee;
+    margin-left: -3px;
+    padding-left: 10px;
+}
+*/
+
+body ._rp_p6 {
+	background-color: #fff;
+	margin-left: 0;
+	padding-left: 45px;
+	padding-bottom: 20px;
+	margin-top: -20px;
+
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+	border: 1px solid #d6d6d6;
+	border-top: 0;
+}
+
+/* Quick Compose */
+
+body ._qc_y {
+	padding-top: 10px;
+}
+
+body ._rp_j ._qc_y {
+	padding: 0;
+}
+body ._rp_j ._qc_F hr {
+	display: none;
+}
+
+/* Bottom border of conversation messages */
+
+body ._rp_R4,
+body ._rp_h4 {
+	border: 0;
+}
+
+/*
+body *::-webkit-scrollbar {
+    width: 10px !important;
+}
+*/
+
+/* SIDEBAR MENU */
+
+body ._n_A4 {
+	line-height: 22px;
+}
+
+/* White text on highlighted (blue) background */
+
+/* [aria-label="Lista de corre"] = _n_d1 _n_X */
+
+/* [aria-label="conversation"] = _lvv_X flexauto */
+._n_d1 .ms-bg-color-neutralLight,
+._n_d1 .ms-bgc-nl,
+._n_d1 .ms-bg-color-neutralLight-hover:hover,
+._n_d1 .ms-bg-color-neutralLight-focus:focus,
+._n_d1 .ms-bg-color-neutralLight-before:before,
+._n_d1 .ms-bgc-nl-h:hover,
+._n_d1 .ms-bgc-nl-f:focus,
+._n_d1 .ms-bgc-nl-b:before {
+	background-color: #f6f6f6;
+}
+
+._n_d1 .ms-bg-color-themeLight,
+._n_d1 .ms-bgc-tl,
+._n_d1 .ms-bg-color-themeLight-hover:hover,
+._n_d1 .ms-bg-color-themeLight-before:before,
+._n_d1 .ms-bgc-tl-h:hover,
+._n_d1 .ms-bgc-tl-b:before {
+	background-color: #177be1;
+}
+
+._n_d1 .ms-bg-color-themeLight span,
+._n_d1 .ms-bgc-tl span,
+._n_d1 .ms-bg-color-themeLight-hover:hover span,
+._n_d1 .ms-bg-color-themeLight-before:before span,
+._n_d1 .ms-bgc-tl-h:hover span,
+._n_d1 .ms-bgc-tl-b:before span,
+._lvv_X .ms-bg-color-themeLight span,
+._lvv_X .ms-bgc-tl span,
+._lvv_X .ms-bg-color-themeLight-hover:hover span,
+._lvv_X .ms-bg-color-themeLight-before:before span,
+._lvv_X .ms-bgc-tl-h:hover span,
+._lvv_X .ms-bgc-tl-b:before span {
+	color: #fff;
+}
+
+body ._n_d1 .ms-bg-color-themeLight span,
+body ._n_d1 .ms-bgc-tl span,
+body ._n_d1 .ms-bg-color-themeLight-hover:hover span,
+body ._n_d1 .ms-bg-color-themeLight-before:before span,
+body ._n_d1 .ms-bgc-tl-h:hover span,
+body ._n_d1 .ms-bgc-tl-b:before span,
+body ._lvv_X .ms-bg-color-themeLight span,
+body ._lvv_X .ms-bgc-tl span,
+body ._lvv_X .ms-bg-color-themeLight-hover:hover span,
+body ._lvv_X .ms-bg-color-themeLight-before:before span,
+body ._lvv_X .ms-bgc-tl-h:hover span,
+body ._lvv_X .ms-bgc-tl-b:before span {
+	color: #fff !important;
+}
+
+body ._lvv_X .ms-bg-color-themeLight span,
+body ._lvv_X .ms-bgc-tl span,
+body ._lvv_X .ms-bg-color-themeLight ._lvv_H,
+body ._lvv_X .ms-bgc-tl ._lvv_H,
+body ._lvv_X .ms-bgc-tl .ms-font-color-themePrimary,
+body ._lvv_X .ms-bgc-tl .ms-fontColor-themePrimary,
+body ._lvv_X .ms-bgc-tl .ms-fontColor-themePrimary,
+body ._lvv_X .ms-bgc-tl .ms-fcl-tp,
+body ._lvv_X .ms-bgc-tl .ms-font-color-themePrimary-hover:hover,
+body ._lvv_X .ms-bgc-tl .ms-font-color-themePrimary-focus:focus,
+body ._lvv_X .ms-bgc-tl .ms-font-color-themePrimary-before:before,
+body ._lvv_X .ms-bgc-tl .ms-fcl-tp-h:hover,
+body ._lvv_X .ms-bgc-tl .ms-fcl-tp-f:focus,
+body ._lvv_X .ms-bgc-tl .ms-fcl-tp-b:before,
+body ._lvv_X .ms-bg-color-themeLight .ms-font-color-themePrimary,
+body ._lvv_X .ms-bg-color-themeLight .ms-fontColor-themePrimary,
+body ._lvv_X .ms-bg-color-themeLight .ms-fontColor-themePrimary,
+body ._lvv_X .ms-bg-color-themeLight .ms-fcl-tp,
+body ._lvv_X .ms-bg-color-themeLight .ms-font-color-themePrimary-hover:hover,
+body ._lvv_X .ms-bg-color-themeLight .ms-font-color-themePrimary-focus:focus,
+body ._lvv_X .ms-bg-color-themeLight .ms-font-color-themePrimary-before:before,
+body ._lvv_X .ms-bg-color-themeLight .ms-fcl-tp-h:hover,
+body ._lvv_X .ms-bg-color-themeLight .ms-fcl-tp-f:focus,
+body ._lvv_X .ms-bg-color-themeLight .ms-fcl-tp-b:before {
+	color: rgba(255, 255, 255, 0.7);
+}
+
+body ._lvv_X .ms-bg-color-themeLight ._lvv_H span,
+body ._lvv_X .ms-bgc-tl ._lvv_H span {
+	color: #fff;
+	font-weight: 500;
+}
+
+body ._lvv_X .ms-bgc-tl .ms-font-color-neutralSecondary,
+body ._lvv_X .ms-bgc-tl .ms-fontColor-neutralSecondary,
+body ._lvv_X .ms-bgc-tl .ms-fcl-ns,
+body ._lvv_X .ms-bgc-tl .ms-font-color-neutralSecondary-hover:hover,
+body ._lvv_X .ms-bgc-tl .ms-font-color-neutralSecondary-focus:focus,
+body ._lvv_X .ms-bgc-tl .ms-font-color-neutralSecondary-before:before,
+body ._lvv_X .ms-bgc-tl .ms-fcl-ns-h:hover,
+body ._lvv_X .ms-bgc-tl .ms-fcl-ns-f:focus,
+body ._lvv_X .ms-bgc-tl .ms-fcl-ns-b:before,
+body ._lvv_X .ms-bg-color-themeLight .ms-font-color-neutralSecondary,
+body ._lvv_X .ms-bg-color-themeLight .ms-fontColor-neutralSecondary,
+body ._lvv_X .ms-bg-color-themeLight .ms-fcl-ns,
+body
+	._lvv_X
+	.ms-bg-color-themeLight
+	.ms-font-color-neutralSecondary-hover:hover,
+body
+	._lvv_X
+	.ms-bg-color-themeLight
+	.ms-font-color-neutralSecondary-focus:focus,
+body
+	._lvv_X
+	.ms-bg-color-themeLight
+	.ms-font-color-neutralSecondary-before:before,
+body ._lvv_X .ms-bg-color-themeLight .ms-fcl-ns-h:hover,
+body ._lvv_X .ms-bg-color-themeLight .ms-fcl-ns-f:focus,
+body ._lvv_X .ms-bg-color-themeLight .ms-fcl-ns-b:before {
+	color: #ddd;
+}
+
+body ._lvv_X .ms-bgc-tl .ms-font-color-neutralDark,
+body ._lvv_X .ms-bgc-tl .ms-fontColor-neutralDark,
+body ._lvv_X .ms-bgc-tl .ms-fcl-nd,
+body ._lvv_X .ms-bgc-tl .ms-font-color-neutralDark-hover:hover,
+body ._lvv_X .ms-bgc-tl .ms-font-color-neutralDark-focus:focus,
+body ._lvv_X .ms-bgc-tl .ms-font-color-neutralDark-before:before,
+body ._lvv_X .ms-bgc-tl .ms-fcl-nd-h:hover,
+body ._lvv_X .ms-bgc-tl .ms-fcl-nd-f:focus,
+body ._lvv_X .ms-bgc-tl .ms-fcl-nd-b:before,
+body ._lvv_X .ms-bg-color-themeLight .ms-font-color-neutralDark,
+body ._lvv_X .ms-bg-color-themeLight .ms-fontColor-neutralDark,
+body ._lvv_X .ms-bg-color-themeLight .ms-fcl-nd,
+body ._lvv_X .ms-bg-color-themeLight .ms-font-color-neutralDark-hover:hover,
+body ._lvv_X .ms-bg-color-themeLight .ms-font-color-neutralDark-focus:focus,
+body ._lvv_X .ms-bg-color-themeLight .ms-font-color-neutralDark-before:before,
+body ._lvv_X .ms-bg-color-themeLight .ms-fcl-nd-h:hover,
+body ._lvv_X .ms-bg-color-themeLight .ms-fcl-nd-f:focus,
+body ._lvv_X .ms-bg-color-themeLight .ms-fcl-nd-b:before {
+	color: #fff;
+}
+
+/* [aria-label="Panel de carpeta"] = _n_N4 */
+
+._n_N4 .ms-bg-color-themeLight,
+._n_N4 .ms-bgc-tl,
+._n_N4 .ms-bg-color-themeLight-hover:hover,
+._n_N4 .ms-bg-color-themeLight-before:before,
+._n_N4 .ms-bgc-tl-h:hover,
+._n_N4 .ms-bgc-tl-b:before {
+	background-color: #e0e0e0;
+}
+
+/* Folder message count label */
+body ._n_F4 {
+	background: none;
+}
+body ._n_F4 span:not(:empty),
+body ._n_F4 ._n_E4:not(:empty) {
+	border-radius: 20px;
+	background: #999;
+	color: #fff;
+	padding: 0px 9px;
+	font-weight: bold;
+	font-size: 12px;
+	min-width: 13px;
+	display: inline-block;
+	text-align: center;
+	margin-right: 4px;
+	line-height: 1.5em;
+}
+
+/* IMG in MESSAGES */
+#Item\.MessageUniqueBody img,
+._rp_U4 img {
+	width: auto !important;
+	max-width: 100% !important;
+	height: auto !important;
+}
+
+/* TO & FROM in MESSAGES */
+[aria-label='Tarjeta de rol'] {
+	font-weight: 500;
+}
+
+/* MAIL COMPOSE */
+._mcp_Y2 {
+	background: #fff;
+	border: 1px solid #ddd;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* EXTENDED MAIL LIST VIEW MOUSE */
+body ._elv_q,
+body ._elv_r {
+	line-height: 25px;
+}
+
+/*
+body ._n_F4.ms-bg-color-neutralLight,
+body ._n_F4.ms-bg-color-neutralLighter {
+    opacity: .1 !important;
+}
+*/
+
+/* SCROLLBARS */
+::-webkit-scrollbar {
+	width: 5px !important;
+}
+::-webkit-scrollbar:horizontal {
+	height: 5px !important;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	border-radius: 0px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	border-radius: 0px;
+	background: rgba(0, 0, 0, 0.8);
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+	border: 0 !important;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(0, 0, 0, 0.1);
+}
