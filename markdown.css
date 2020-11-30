@@ -674,6 +674,11 @@ body ul li li li li::after {
 	width: 5px;
 }
 
+ul.contains-task-list li.task-list-item::after {
+	content: '';
+	display: none;
+}
+
 body dl dt {
 	font-size: 1em;
 	font-style: italic;
