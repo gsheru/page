@@ -1251,4 +1251,8 @@ img.screenshot {
 	body a[href] {
 		color: #fff;
 	}
+
+	pre {
+		background-color: rgba(0, 0, 0, 0.2) !important;
+	}
 }
