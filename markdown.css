@@ -1252,7 +1252,8 @@ img.screenshot {
 		color: #fff;
 	}
 
-	pre {
+	body pre,
+	body code {
 		background-color: rgba(0, 0, 0, 0.2) !important;
 	}
 }
