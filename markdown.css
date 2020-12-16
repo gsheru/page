@@ -1255,6 +1255,7 @@ img.screenshot {
 	body pre,
 	body :not(pre) > code {
 		background: #292929 !important;
+		color: #d6d486;
 	}
 
 	body pre code {
