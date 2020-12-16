@@ -1253,7 +1253,11 @@ img.screenshot {
 	}
 
 	body pre,
-	body code {
-		background-color: rgba(0, 0, 0, 0.2) !important;
+	body :not(pre) > code {
+		background: #292929 !important;
+	}
+
+	body pre code {
+		background: transparent !important;
 	}
 }
