@@ -739,7 +739,7 @@ body code {
 	padding: 0.2em 0.4em;
 }
 
-body :not(pre) code {
+body code {
 	color: #c14747;
 }
 
@@ -755,6 +755,7 @@ body pre > code {
 	padding: 0;
 	white-space: pre;
 	word-break: normal;
+	color: #333;
 }
 
 body .highlight {
@@ -1253,7 +1254,7 @@ img.screenshot {
 	}
 
 	body pre,
-	body :not(pre) > code {
+	body code {
 		background: #292929 !important;
 		color: #d6d486;
 	}
@@ -1290,6 +1291,7 @@ body {
 :root {
 	--input-border-color: #ccc;
 	--color-success: #27c627;
+	--input-task-checked-background: #666;
 }
 input[type='checkbox'][disabled] {
 	background: transparent;
@@ -1299,13 +1301,14 @@ input[type='checkbox'][disabled] {
 	width: 1.2em;
 	height: 1.2em;
 	line-height: 1em;
+	border-radius: 0.2rem;
 }
 
 input[type='checkbox'][disabled][checked] {
-	background: var(--primary);
-	border-color: var(--primary);
+	background: var(--input-task-checked-background);
+	border-color: var(--input-task-checked-background);
 	background-size: 0.9em;
 	background-repeat: no-repeat;
-	background-position: 50% 50%;
+	background-position: 50% calc(50% + 1px);
 	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='%23ffffff' viewBox='0 0 24 24'%3E%3Cpath d='M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z'/%3E%3C/svg%3E");
 }
